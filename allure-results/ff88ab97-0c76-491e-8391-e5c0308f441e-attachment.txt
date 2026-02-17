@@ -1,0 +1,13 @@
+Booking created successfully for deletion test. Response: {
+  bookingid: 4709,
+  booking: {
+    firstname: 'Petar',
+    lastname: 'Petrovic',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Booking ID to be deleted: 4709
+Text in the response: Forbidden

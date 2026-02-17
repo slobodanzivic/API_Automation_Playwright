@@ -1,0 +1,1 @@
+Response for invalid booking ID 0a1b2c: Not Found

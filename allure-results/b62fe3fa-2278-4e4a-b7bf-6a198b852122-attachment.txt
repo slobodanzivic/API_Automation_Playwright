@@ -1,0 +1,8 @@
+{
+  firstname: 'Jim',
+  lastname: 'Brown',
+  totalprice: 614,
+  depositpaid: true,
+  bookingdates: { checkin: '2017-02-17', checkout: '2024-07-02' }
+}
+Response body matches the JSON schema.

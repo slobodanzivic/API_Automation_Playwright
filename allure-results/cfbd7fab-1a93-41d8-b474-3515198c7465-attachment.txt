@@ -1,0 +1,18 @@
+{
+  firstname: 'Petar',
+  lastname: 'Petrovic',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+  additionalneeds: 'Breakfast'
+}
+Created booking with ID: 4876
+Generated token: 403000c06515457
+{
+  firstname: 'Slobodan',
+  lastname: 'Zivic',
+  totalprice: 12345,
+  depositpaid: false,
+  bookingdates: { checkin: '2026-01-01', checkout: '2027-01-01' },
+  additionalneeds: 'Breakfast'
+}
