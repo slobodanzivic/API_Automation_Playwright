@@ -4,7 +4,7 @@ import { JSONReader } from "../../../utils/JSONReader";
 
 test.describe('Partial Booking Update', () => {
 
-    test('Update an existing booking partially using PATCH method', async ({ request }) => {
+    test('Update an existing booking partially using PATCH method @patch', async ({ request }) => {
 
         // Step 1: ************************** Create a new booking**********************************
 

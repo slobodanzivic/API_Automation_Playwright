@@ -3,7 +3,7 @@ import { JSONReader } from '../../../utils/JSONReader';
 
 test.describe('Update Booking', () => {
 
-    test('Update an existing booking', async ({ request }) => {
+    test('Update an existing booking @put', async ({ request }) => {
 
         // Step 1: ************************** Create a new booking**********************************
 

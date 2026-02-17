@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Booking API Tests', () => {
   
-  test('GET /booking - should return list of all bookings', async ({ request }) => {
+  test('GET /booking - should return list of all bookings @get', async ({ request }) => {
     const response = await request.get('https://restful-booker.herokuapp.com/booking');
 
     // Verify response status

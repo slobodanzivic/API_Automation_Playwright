@@ -4,7 +4,7 @@ import { JSONReader } from '../../../utils/JSONReader';
 
 test.describe('DELETE booking API Tests', () => {
 
-    test('DELETE /booking/{id} - delete booking with invalid booking ID', async ({ request }) => {
+    test('DELETE /booking/{id} - delete booking with invalid booking ID @delete', async ({ request }) => {
 
         //Read booking data from JSON file
         const jsonReader = new JSONReader();
@@ -38,7 +38,7 @@ test.describe('DELETE booking API Tests', () => {
     });
 
 
-    test('DELETE /booking/{id} - delete booking without authentication token', async ({ request }) => {
+    test('DELETE /booking/{id} - delete booking without authentication token @delete', async ({ request }) => {
 
         //Read booking data from JSON file
         const jsonReader = new JSONReader();

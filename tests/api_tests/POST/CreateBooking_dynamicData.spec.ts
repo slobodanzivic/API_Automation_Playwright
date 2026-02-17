@@ -18,7 +18,7 @@ import { DateTime } from 'luxon';
 
 test.describe("Create a booking dynamically with random data",  ()=> {
 
-    test("POST /booking - should create a new booking", async ({request}) => {
+    test("POST /booking - should create a new booking @post", async ({request}) => {
 
         //data generation using faker library
         const firstName = faker.person.firstName();

@@ -4,7 +4,7 @@ import { JSONReader } from '../../../utils/JSONReader';
 
 test.describe('DELETE booking API Tests', () => {
 
-    test('DELETE /booking/{id} - should delete a booking successfully', async ({ request }) => {
+    test('DELETE /booking/{id} - should delete a booking successfully @delete', async ({ request }) => {
 
         //Read booking data from JSON file
         const jsonReader = new JSONReader();

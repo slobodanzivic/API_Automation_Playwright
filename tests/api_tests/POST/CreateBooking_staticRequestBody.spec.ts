@@ -9,7 +9,7 @@ import { test, expect } from "@playwright/test"
 
 test.describe("Create a booking with a static request body",  ()=> {
 
-    test("POST /booking - should create a new booking", async ({request}) => {
+    test("POST /booking - should create a new booking @post", async ({request}) => {
 
         //********************** preparing the request body ***********************
         const requestBody = {

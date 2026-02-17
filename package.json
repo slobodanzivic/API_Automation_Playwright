@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:report": "npx playwright show-report",
+    "test:post": "npx playwright test --grep @post",
+    "test:delete": "npx playwright test --grep @delete",
+    "test:get": "npx playwright test --grep @get",
+    "test:put": "npx playwright test --grep @put",
+    "test:patch": "npx playwright test --grep @patch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

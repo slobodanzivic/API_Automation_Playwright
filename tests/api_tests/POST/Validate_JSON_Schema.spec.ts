@@ -8,7 +8,7 @@ import {createBookingSchema} from "../../../schemas/createBookingSchema.schema";
 
 test.describe('Validate JSON Schema of create booking API response', () => {
 
-    test('POST /booking - should return response matching the JSON schema', async ({ request }) => {
+    test('POST /booking - should return response matching the JSON schema @post', async ({ request }) => {
 
        //read data from the JSON file and prepare the request body
         const jsonFile = "testData/createBooking_requestBody.json";

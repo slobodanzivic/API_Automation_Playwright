@@ -10,7 +10,7 @@ import fs from "fs";
 
 test.describe("Create a booking with request body from a JSON file",  ()=> {
 
-    test("POST /booking - should create a new booking", async ({request}) => {
+    test("POST /booking - should create a new booking @post", async ({request}) => {
 
         //read data from the JSON file and prepare the request body
         const jsonFile="testData/createBooking_requestBody.json";

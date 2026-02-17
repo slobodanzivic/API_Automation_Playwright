@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('GET /booking - Retrieve booking IDs by name', () => {
 
 
-    test('should return booking IDs for a valid first name and last name', async ({ request }) => {
+    test('should return booking IDs for a valid first name and last name @get', async ({ request }) => {
 
         const firstName = "Jim";  // Assuming there are bookings with this first name
         const lastName = "Brown"; // Assuming there are bookings with this last name

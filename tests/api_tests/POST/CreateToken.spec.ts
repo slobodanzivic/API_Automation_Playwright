@@ -99,7 +99,7 @@ test.describe('Authentication API Tests', () => {
     expect(responseBody.reason).toBe('Bad credentials');
   });
 
-  test('POST /auth - should fail with empty credentials', async ({ request }) => {
+  test('POST /auth - should fail with empty credentials @post', async ({ request }) => {
     const response = await request.post('https://restful-booker.herokuapp.com/auth', {
       data: {
         username: '',
