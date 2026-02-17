@@ -1,70 +1,16 @@
 import { test, expect } from "@playwright/test"
 import Ajv from "ajv";
 import fs from "fs";
-import { JSONReader } from "../../../utils/JSONReader";
+import {SchemaValidator} from "../../../utils/SchemaValidator";
+import {createBookingSchema} from "../../../schemas/createBookingSchema.schema";
+
+
 
 test.describe('Validate JSON Schema of create booking API response', () => {
 
     test('POST /booking - should return response matching the JSON schema', async ({ request }) => {
 
-        // Define the JSON schema for the expected response
-        const responseSchema = {
-            "type": "object",
-            "properties": {
-                "bookingid": {
-                    "type": "number"
-                },
-                "booking": {
-                    "type": "object",
-                    "properties": {
-                        "firstname": {
-                            "type": "string"
-                        },
-                        "lastname": {
-                            "type": "string"
-                        },
-                        "totalprice": {
-                            "type": "number"
-                        },
-                        "depositpaid": {
-                            "type": "boolean"
-                        },
-                        "bookingdates": {
-                            "type": "object",
-                            "properties": {
-                                "checkin": {
-                                    "type": "string"
-                                },
-                                "checkout": {
-                                    "type": "string"
-                                }
-                            },
-                            "required": [
-                                "checkin",
-                                "checkout"
-                            ]
-                        },
-                        "additionalneeds": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "firstname",
-                        "lastname",
-                        "totalprice",
-                        "depositpaid",
-                        "bookingdates",
-                        "additionalneeds"
-                    ]
-                }
-            },
-            "required": [
-                "bookingid",
-                "booking"
-            ]
-        }
-
-        //read data from the JSON file and prepare the request body
+       //read data from the JSON file and prepare the request body
         const jsonFile = "testData/createBooking_requestBody.json";
         const requestBody = JSON.parse(fs.readFileSync(jsonFile, "utf-8"));
 
@@ -85,9 +31,9 @@ test.describe('Validate JSON Schema of create booking API response', () => {
         expect(response.status()).toBe(200);
 
         //validating the response body against the JSON schema using Ajv library
-        const ajv = new Ajv();
-        const validate = ajv.compile(responseSchema);
-        const isValid = validate(responseBody);
+        //Call the validateSchema function to validate the response body against the JSON schema
+        
+        const isValid = SchemaValidator.validateSchema(createBookingSchema, responseBody);
         expect(isValid).toBeTruthy();
 
         
