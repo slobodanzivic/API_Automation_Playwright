@@ -1,0 +1,21 @@
+Created booking with ID: 1907
+Booking details: {
+  bookingid: 1907,
+  booking: {
+    firstname: 'Petar',
+    lastname: 'Petrovic',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Generated token: 01a06e1e4e8cb08
+Booking response after partial update: {
+  firstname: 'Slobodan',
+  lastname: 'Zivic',
+  totalprice: 5555,
+  depositpaid: true,
+  bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+  additionalneeds: 'Breakfast'
+}

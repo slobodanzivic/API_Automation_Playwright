@@ -1,0 +1,14 @@
+Booking created successfully for deletion test. Response: {
+  bookingid: 1844,
+  booking: {
+    firstname: 'Petar',
+    lastname: 'Petrovic',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Booking ID to be deleted: 1844
+Token generated for authentication: 57882cecc25ae18
+Not Found
